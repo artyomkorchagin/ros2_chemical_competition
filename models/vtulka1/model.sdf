@@ -7,7 +7,7 @@
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://vtulka1/meshes/vtulka1.stl</uri>
+            <uri>meshes/vtulka1.STL</uri>
           <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -15,7 +15,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://vtulka1/meshes/vtulka1.stl</uri>
+            <uri>meshes/vtulka1.STL</uri>
           <scale>1 1 1</scale>
           </mesh>
         </geometry>
