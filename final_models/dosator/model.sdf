@@ -1,13 +1,13 @@
 <?xml version='1.0'?>
 <sdf version="1.4">
-  <model name="bucket">
+  <model name="dosator">
     <pose>0 0 0.5 0 0 0</pose>
     <static>true</static>
     <link name="link"> 
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>meshes/bucket.STL</uri>
+            <uri>meshes/dosator.STL</uri>
           <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -16,7 +16,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>meshes/bucket.STL</uri>
+            <uri>meshes/dosator.STL</uri>
           <scale>1 1 1</scale>
           </mesh>
         </geometry>
