@@ -3690,5 +3690,30 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-2.40006 -0.026621 0.255191 4e-06 1e-06 0.001096</pose>
     </model>
+    <model name='kuka_placeholder'>
+      <pose>0 0 0 0 0 0</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file://models/kuka_iiwa/kuka.stl</uri>
+              <scale>.001 .001 .001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file://models/kuka_iiwa/kuka.stl</uri>
+              <scale>.001 .001 .001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
   </world>
 </sdf>
