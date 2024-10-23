@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.7'>
-  <model name='concr'>
+  <model name='mixer'>
     <link name='link_0'>
       <inertial>
         <mass>1</mass>
@@ -14,7 +14,7 @@
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose>0 0 0 0 -0 0</pose>
+      <pose>0 0 0 -0 -0 -0</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -114,7 +114,7 @@
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose>0 0 0 0 -0 0</pose>
+      <pose>0 0 0 -0 -0 -0</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -214,7 +214,7 @@
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose>0 0 0 0 -0 0</pose>
+      <pose>0 0 0 -0 -0 -0</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -223,7 +223,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>file://meshes/stoika_2.stl</uri>
+            <uri>file://stoika_2.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -314,7 +314,7 @@
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose>0 0 0 0 -0 0</pose>
+      <pose>0 0 0 -0 -0 -0</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -323,7 +323,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>file://meshes/podstavka.stl</uri>
+            <uri>file://podstavka.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
