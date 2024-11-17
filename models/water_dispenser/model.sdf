@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.7'>
-  <model name='mixer'>
+  <model name='water_dispenser'>
     <link name='link_0'>
       <inertial>
         <mass>1</mass>
@@ -14,7 +14,7 @@
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose>0 0 0 -0 -0 -0</pose>
+      <pose>0 0 0 0 -0 0</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -23,7 +23,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>file://meshes/busket.stl</uri>
+            <uri>file://models/water_dispenser/meshes/water_dispenser.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -50,7 +50,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>file://meshes/busket.stl</uri>
+            <uri>file://models/water_dispenser/meshes/water_dispenser.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -103,7 +103,7 @@
     </link>
     <link name='link_1'>
       <inertial>
-        <mass>100</mass>
+        <mass>1</mass>
         <inertia>
           <ixx>0.166667</ixx>
           <ixy>0</ixy>
@@ -114,7 +114,7 @@
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose>0 0 0 -0 -0 -0</pose>
+      <pose>0 0 0 0 -0 0</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -123,7 +123,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>file://meshes/stoika_1.stl</uri>
+            <uri>file://models/water_dispenser/meshes/tripod.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -150,7 +150,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>file://meshes/stoika_1.stl</uri>
+            <uri>file://models/water_dispenser/meshes/tripod.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -214,7 +214,7 @@
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose>0 0 0 -0 -0 -0</pose>
+      <pose>0 0 0 0 -0 0</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -223,7 +223,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>file://stoika_2.stl</uri>
+            <uri>file://models/water_dispenser/meshes/nozzle.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -250,7 +250,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>file://meshes/stoika_2.stl</uri>
+            <uri>file://models/water_dispenser/meshes/nozzle.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -314,7 +314,7 @@
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose>0 0 0 -0 -0 -0</pose>
+      <pose>0 0 0 0 -0 0</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -323,7 +323,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>file://podstavka.stl</uri>
+            <uri>file://models/water_dispenser/meshes/mixer.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -350,7 +350,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>file://meshes/podstavka.stl</uri>
+            <uri>file://models/water_dispenser/meshes/mixer.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -401,72 +401,6 @@
         </surface>
       </collision>
     </link>
-    <joint name='link_1_JOINT_0' type='revolute'>
-      <parent>link_1</parent>
-      <child>link_2</child>
-      <pose>0 0 0.82 0 -0 0</pose>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <limit>
-          <lower>-1.79769e+308</lower>
-          <upper>1.79769e+308</upper>
-          <effort>-1</effort>
-          <velocity>-1</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
-          <friction>0</friction>
-        </dynamics>
-      </axis>
-      <physics>
-        <ode>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-          <suspension>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </suspension>
-        </ode>
-      </physics>
-    </joint>
-    <joint name='link_2_JOINT_1' type='fixed'>
-      <parent>link_2</parent>
-      <child>link_3</child>
-      <pose>0 0 0.42 0 -0 0</pose>
-      <physics>
-        <ode>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-          <suspension>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </suspension>
-        </ode>
-      </physics>
-    </joint>
-    <joint name='link_3_JOINT_2' type='fixed'>
-      <parent>link_3</parent>
-      <child>link_0</child>
-      <pose>0 0 0.43 0 -0 0</pose>
-      <physics>
-        <ode>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-          <suspension>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </suspension>
-        </ode>
-      </physics>
-    </joint>
     <static>0</static>
     <allow_auto_disable>1</allow_auto_disable>
   </model>
