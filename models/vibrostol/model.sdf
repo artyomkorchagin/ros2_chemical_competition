@@ -16,13 +16,13 @@
       </inertial>
       <self_collide>0</self_collide>
       <enable_wind>0</enable_wind>
-      <kinematic>0</kinematic>
+      <kinematic>1</kinematic>
       <pose>0 0 0 0 -0 0</pose>
       <gravity>1</gravity>
       <visual name='visual'>
         <geometry>
           <box>
-            <size>0.8 0.8 0.75</size>
+            <size>0.7 0.7 0.7</size>
           </box>
         </geometry>
         <material>
@@ -48,7 +48,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.8 0.8 0.75</size>
+            <size>0.7 0.7 0.7</size>
           </box>
         </geometry>
         <surface>

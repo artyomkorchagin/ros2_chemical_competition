@@ -1,16 +1,16 @@
 <?xml version='1.0'?>
 <sdf version='1.7'>
-  <model name='work_sphere_2'>
-    <link name='link_3'>
+  <model name='mobile_platform'>
+    <link name='link_0'>
       <inertial>
-        <mass>1</mass>
+        <mass>390</mass>
         <inertia>
-          <ixx>0.166667</ixx>
+          <ixx>28.8242</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.166667</iyy>
+          <iyy>53.833</iyy>
           <iyz>0</iyz>
-          <izz>0.166667</izz>
+          <izz>50.8073</izz>
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
@@ -22,10 +22,9 @@
       <visual name='visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
-          <mesh>
-            <uri>file://models/work_sphere/work_sphere.stl</uri>
-            <scale>1 1 1</scale>
-          </mesh>
+          <box>
+            <size>1.08 0.63 0.7</size>
+          </box>
         </geometry>
         <material>
           <lighting>1</lighting>
@@ -33,15 +32,15 @@
             <uri>file://media/materials/scripts/gazebo.material</uri>
             <name>Gazebo/Grey</name>
           </script>
-          <shader type='vertex'>
+          <shader type='pixel'>
             <normal_map>__default__</normal_map>
           </shader>
-          <ambient>0 0.5 1 0.5</ambient>
-          <diffuse>0 0.2 0 0.2</diffuse>
-          <specular>0.01 0.21 0.01 0</specular>
-          <emissive>0 0.2 0 0</emissive>
+          <ambient>0.3 0.3 0.3 1</ambient>
+          <diffuse>0.7 0.7 0.7 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
+          <emissive>0 0 0 1</emissive>
         </material>
-        <transparency>0.8</transparency>
+        <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
       </visual>
       <collision name='collision'>
@@ -49,9 +48,9 @@
         <max_contacts>10</max_contacts>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
-          <sphere>
-            <radius>0.005</radius>
-          </sphere>
+          <box>
+            <size>1.08 0.63 0.7</size>
+          </box>
         </geometry>
         <surface>
           <friction>

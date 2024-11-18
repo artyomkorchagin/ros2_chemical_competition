@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <sdf version='1.7'>
-  <model name='work_sphere_2'>
-    <link name='link_3'>
+  <model name='table'>
+    <link name='link'>
       <inertial>
         <mass>1</mass>
         <inertia>
@@ -14,34 +14,32 @@
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>1</kinematic>
       <pose>0 0 0 0 -0 0</pose>
       <gravity>1</gravity>
-      <self_collide>0</self_collide>
-      <kinematic>1</kinematic>
-      <enable_wind>0</enable_wind>
       <visual name='visual'>
-        <pose>0 0 0 0 -0 0</pose>
         <geometry>
-          <mesh>
-            <uri>file://models/work_sphere/work_sphere.stl</uri>
-            <scale>1 1 1</scale>
-          </mesh>
+          <box>
+            <size>1 0.5 0.8</size>
+          </box>
         </geometry>
         <material>
-          <lighting>1</lighting>
           <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
             <name>Gazebo/Grey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
-          <shader type='vertex'>
+          <shader type='pixel'>
             <normal_map>__default__</normal_map>
           </shader>
-          <ambient>0 0.5 1 0.5</ambient>
-          <diffuse>0 0.2 0 0.2</diffuse>
-          <specular>0.01 0.21 0.01 0</specular>
-          <emissive>0 0.2 0 0</emissive>
+          <ambient>0.3 0.3 0.3 1</ambient>
+          <diffuse>0.7 0.7 0.7 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
+          <emissive>0 0 0 1</emissive>
         </material>
-        <transparency>0.8</transparency>
+        <pose>0 0 0 0 -0 0</pose>
+        <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
       </visual>
       <collision name='collision'>
@@ -49,9 +47,9 @@
         <max_contacts>10</max_contacts>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
-          <sphere>
-            <radius>0.005</radius>
-          </sphere>
+          <box>
+            <size>1 0.5 0.8</size>
+          </box>
         </geometry>
         <surface>
           <friction>
