@@ -92,10 +92,10 @@
       <pose>-0.475902 0.28084 0 0 -0 0</pose>
     </model>
     <state world_name='__default__'>
-      <sim_time>0 0</sim_time>
-      <real_time>0 0</real_time>
-      <wall_time>1731164126 265339292</wall_time>
-      <iterations>0</iterations>
+      <sim_time>10 286000000</sim_time>
+      <real_time>10 326865702</real_time>
+      <wall_time>1732401098 918968637</wall_time>
+      <iterations>10286</iterations>
       <model name='ground_plane'>
         <pose>-0.475902 0.28084 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -107,31 +107,31 @@
         </link>
       </model>
       <model name='tip_dispenser'>
-        <pose>-0.015468 -0.015882 0.292812 0 -0 0</pose>
+        <pose>-0.000618 0.006409 0.264956 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='link_0'>
-          <pose>-0.011998 -0.014249 0.316355 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+        <link name='body'>
+          <pose>-0.001524 0.006224 0.27666 0 -0 0</pose>
+          <velocity>-0 -0 0 0 -0 0</velocity>
+          <acceleration>0 -0 -0 0 -0 0</acceleration>
+          <wrench>0 -0 -0 0 -0 0</wrench>
+        </link>
+        <link name='button'>
+          <pose>-0.00151 0.005893 0.37392 0 0 -2.90884</pose>
+          <velocity>0 0 -0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
-        <link name='link_1'>
-          <pose>-0.016374 -0.016067 0.304516 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+        <link name='pusher'>
+          <pose>0.002852 0.008042 0.288499 0 -0 0</pose>
+          <velocity>-0 -0 0 0 -0 0</velocity>
+          <acceleration>0 -0 0 0 -0 0</acceleration>
+          <wrench>0 -0 0 0 -0 0</wrench>
         </link>
-        <link name='link_2'>
-          <pose>-0.01636 -0.016398 0.401776 0 0 -2.90884</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='link_3'>
-          <pose>-0.017139 -0.016815 0.148601 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+        <link name='tip'>
+          <pose>-0.002289 0.005476 0.120745 0 -0 0</pose>
+          <velocity>-0 -0 0 0 -0 0</velocity>
+          <acceleration>-0 0 0 0 -0 0</acceleration>
+          <wrench>-0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <light name='sun'>
@@ -140,13 +140,13 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>0.872938 -0.271229 0.876088 0 0.599644 2.81619</pose>
+        <pose>0.454056 0.095034 0.302859 0 -0.016359 -3.099</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
     <model name='tip_dispenser'>
-      <link name='link_0'>
+      <link name='pusher'>
         <inertial>
           <mass>1</mass>
           <inertia>
@@ -189,7 +189,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>file://meshes/tip_remover.stl</uri>
+              <uri>/home/uttu/Documents/GitHub/ros2_chemical_competition/tip_dispenser/meshes/tip_remover.stl</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -240,7 +240,7 @@
           </surface>
         </collision>
       </link>
-      <link name='link_1'>
+      <link name='body'>
         <inertial>
           <mass>1</mass>
           <inertia>
@@ -254,7 +254,7 @@
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <pose>-0.000906 -0.000185 0.011704 0 -0 0</pose>
-        <gravity>1</gravity>
+        <gravity>0</gravity>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
         <enable_wind>0</enable_wind>
@@ -289,7 +289,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>file://meshes/body.stl</uri>
+              <uri>/home/uttu/Documents/GitHub/ros2_chemical_competition/tip_dispenser/meshes/body.stl</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -340,7 +340,7 @@
           </surface>
         </collision>
       </link>
-      <link name='link_2'>
+      <link name='button'>
         <inertial>
           <mass>1</mass>
           <inertia>
@@ -383,7 +383,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>file://meshes/button.stl</uri>
+              <uri>/home/uttu/Documents/GitHub/ros2_chemical_competition/tip_dispenser/meshes/button.stl</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -434,7 +434,7 @@
           </surface>
         </collision>
       </link>
-      <link name='link_3'>
+      <link name='tip'>
         <inertial>
           <mass>1</mass>
           <inertia>
@@ -448,7 +448,7 @@
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <pose>-0.001671 -0.000933 -0.144211 0 -0 0</pose>
-        <gravity>1</gravity>
+        <gravity>0</gravity>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
         <enable_wind>0</enable_wind>
@@ -483,7 +483,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>file://meshes/tip.stl</uri>
+              <uri>/home/uttu/Documents/GitHub/ros2_chemical_competition/tip_dispenser/meshes/tip.stl</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -534,6 +534,103 @@
           </surface>
         </collision>
       </link>
+      <joint name='body_button' type='prismatic'>
+        <parent>body</parent>
+        <child>button</child>
+        <pose>0 0 0 0 -0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-0.0023</lower>
+            <upper>0</upper>
+            <effort>-1</effort>
+            <velocity>-1</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <suspension>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </suspension>
+          </ode>
+        </physics>
+      </joint>
+      <joint name='body_pusher' type='prismatic'>
+        <parent>body</parent>
+        <child>pusher</child>
+        <pose>0 0 0 0 -0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-0.018</lower>
+            <upper>0</upper>
+            <effort>-1</effort>
+            <velocity>-1</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <suspension>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </suspension>
+          </ode>
+        </physics>
+      </joint>
+      <plugin name="detach_plugin" filename="libDetachPlugin.so"/>
+      <joint name='body_tip' type='prismatic'>
+        <parent>body</parent>
+        <child>tip</child>
+        <pose>0 0 0 0 -0 0</pose>
+        <axis>
+          <xyz>1 0 1</xyz>
+          <limit>
+            <lower>-0</lower>
+            <upper>0</upper>
+            <effort>-1</effort>
+            <velocity>-1</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <suspension>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </suspension>
+          </ode>
+        </physics>
+      </joint>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-0.000618 0.006409 0.264956 0 -0 0</pose>
