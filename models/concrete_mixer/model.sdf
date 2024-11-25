@@ -50,7 +50,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/concrete_mixer/meshes/busket.stl</uri>
+            <uri>file://models/concrete_mixer/meshes/busket.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -123,7 +123,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/concrete_mixer/meshes/async_motor_v1.stl</uri>
+            <uri>file://models/concrete_mixer/meshes/async_motor_v1.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -150,7 +150,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/concrete_mixer/meshes/async_motor_v1.stl</uri>
+            <uri>file://models/concrete_mixer/meshes/async_motor_v1.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -250,7 +250,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/concrete_mixer/meshes/gate.stl</uri>
+            <uri>file://models/concrete_mixer/meshes/gate.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -350,7 +350,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/concrete_mixer/meshes/mixer.stl</uri>
+            <uri>file://models/concrete_mixer/meshes/mixer.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -548,7 +548,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/concrete_mixer/meshes/screw.stl</uri>
+            <uri>file://models/concrete_mixer/meshes/screw.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>

@@ -50,7 +50,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/feeder_sand/meshes/screw.stl</uri>
+            <uri>file://models/feeder_sand/meshes/screw.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -150,7 +150,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/feeder_sand/meshes/body.stl</uri>
+            <uri>file://models/feeder_sand/meshes/body.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -223,7 +223,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/feeder_sand/meshes/async_motor_v1.stl</uri>
+            <uri>file://models/feeder_sand/meshes/async_motor_v1.stl</uri>
             <scale>0.8 0.8 0.8</scale>
           </mesh>
         </geometry>
@@ -250,7 +250,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/feeder_sand/meshes/async_motor_v1.stl</uri>
+            <uri>file://models/feeder_sand/meshes/async_motor_v1.stl</uri>
             <scale>0.8 0.8 0.8</scale>
           </mesh>
         </geometry>

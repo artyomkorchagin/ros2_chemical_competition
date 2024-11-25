@@ -50,7 +50,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/water_dispenser/meshes/water_dispenser.stl</uri>
+            <uri>file://models/water_dispenser/meshes/water_dispenser.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -123,7 +123,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/water_dispenser/meshes/dispenser_holder.stl</uri>
+            <uri>file://models/water_dispenser/meshes/dispenser_holder.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -150,7 +150,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/water_dispenser/meshes/dispenser_holder.stl</uri>
+            <uri>file://models/water_dispenser/meshes/dispenser_holder.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -250,7 +250,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/water_dispenser/meshes/tripod.stl</uri>
+            <uri>file://models/water_dispenser/meshes/tripod.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -350,7 +350,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/water_dispenser/meshes/nozzle.stl</uri>
+            <uri>file://models/water_dispenser/meshes/nozzle.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -450,7 +450,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/stepan/Документы/GitHub/ros2_chemical_competition/models/water_dispenser/meshes/mixer.stl</uri>
+            <uri>file://models/water_dispenser/meshes/mixer.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
