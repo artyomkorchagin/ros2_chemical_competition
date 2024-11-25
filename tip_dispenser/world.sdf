@@ -189,7 +189,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/uttu/Documents/GitHub/ros2_chemical_competition/tip_dispenser/meshes/tip_remover.stl</uri>
+              <uri>file://meshes/tip_remover.stl</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -289,7 +289,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/uttu/Documents/GitHub/ros2_chemical_competition/tip_dispenser/meshes/body.stl</uri>
+              <uri>file://meshes/body.stl</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -383,7 +383,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/uttu/Documents/GitHub/ros2_chemical_competition/tip_dispenser/meshes/button.stl</uri>
+              <uri>file://meshes/button.stl</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -483,7 +483,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/uttu/Documents/GitHub/ros2_chemical_competition/tip_dispenser/meshes/tip.stl</uri>
+              <uri>file://meshes/tip.stl</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
