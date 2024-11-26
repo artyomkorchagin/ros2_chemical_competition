@@ -24,20 +24,8 @@
     
     <include>
       <uri>model://table</uri>
-      <name>table_right</name>
-      <pose>0.2 -0.741404 0.4 0 -0 0</pose>
-    </include>
-
-    <include>
-      <uri>model://table</uri>
-      <name>table_center</name>
-      <pose>0.640523 -0.14245 0.4 0 0 -1.5708</pose>
-    </include>
-    
-    <include>
-      <uri>model://table</uri>
-      <name>table_left</name>
-      <pose>0.100103 0.654643 0.4 0 -0 0</pose>
+      <name>table</name>
+      <pose>0.2 0 0.8 0 -0 1.570796</pose>
     </include>
 
     <include>
@@ -54,14 +42,20 @@
 
     <include>
       <uri>model://dispenser_holder</uri>
-      <name>dispenser_holder</name>
-      <pose>0.669 0.426 0.789 0 0 0</pose>
+      <name>dispenser_holder_mixer</name>
+      <pose>0.79 0.507 0.789 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://dispenser_holder</uri>
+      <name>dispenser_holder_tube</name>
+      <pose>0.37 -0.99 0.789 0 0 -3.141593</pose>
     </include>
 
     <include>
       <uri>model://dryer</uri>
       <name>dryer</name>
-      <pose>-0.067665 0.651488 0.8 0 0 -1.5708</pose>
+      <pose>-0.068 0.65 0.8 0 0 3.141589</pose>
     </include>
 
     <include>
@@ -97,13 +91,19 @@
     <include>
       <uri>model://tip_holder</uri>
       <name>tip_holder</name>
-      <pose>1.71389 -0.024532 0.8 0 0 0</pose>
+      <pose>0.29 -0.625 0.8 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://tip_tripod</uri>
       <name>tip_tripod</name>
-      <pose>1 1 0.8 0 0 0</pose>
+      <pose>0.48 -0.77 0.810795 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://tip_dispenser</uri>
+      <name>tip_dispenser</name>
+      <pose>1.48 0 0 0 0 0</pose>
     </include>
 
     <include>
@@ -113,9 +113,21 @@
     </include>
 
     <include>
+      <uri>model://tube_main</uri>
+      <name>tube_main</name>
+      <pose>0 -0.6 0.85 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://tube_cover</uri>
+      <name>tube_cover</name>
+      <pose>0 -0.6 0.95 0 0 0</pose>
+    </include>
+
+    <include>
       <uri>model://table_vibro</uri>
       <name>table_vibro</name>
-      <pose>-2.53046 -0.225356 0.35 0 -0 0</pose>
+      <pose>-2.53046 -0.225356 0 0 -0 0</pose>
     </include>
 
     <include>
@@ -130,11 +142,7 @@
       <pose>0.51 0 1.2 0 0 1.570793</pose>
     </include>
 
-    <include>
-      <uri>model://work_sphere</uri>
-      <name>work_sphere</name>
-      <pose>0 0 0.7 0 0 0</pose>
-    </include>
+
 
     <gravity>0 0 -9.8</gravity>
     

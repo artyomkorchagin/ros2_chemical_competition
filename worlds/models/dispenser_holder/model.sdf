@@ -5,7 +5,7 @@
       <self_collide>0</self_collide>
       <enable_wind>0</enable_wind>
       <kinematic>0</kinematic>
-      <pose>0.06 -0.285 0.4 0 -0 1.5708</pose>
+      <pose>0.04 -0.206 0.4 0 -0 1.5708</pose>
       <gravity>1</gravity>
       <inertial>
         <mass>3</mass>

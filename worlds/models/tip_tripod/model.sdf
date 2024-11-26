@@ -4,11 +4,11 @@
     <link name='link'>
       <self_collide>0</self_collide>
       <enable_wind>0</enable_wind>
-      <kinematic>0</kinematic>
+      <kinematic>1</kinematic>
       <pose>0 0 0 0 -0 0</pose>
       <gravity>1</gravity>
       <inertial>
-        <mass>0.5</mass>
+        <mass>0.5</mass>s
         <pose>0 0 0 0 -0 0</pose>
         <inertia>
           <ixx>0</ixx>

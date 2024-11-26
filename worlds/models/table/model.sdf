@@ -1,41 +1,42 @@
 <?xml version='1.0'?>
 <sdf version='1.7'>
   <model name='table'>
-    <link name='link'>
-      <inertial>
-        <mass>1</mass>
-        <inertia>
-          <ixx>0.166667</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.166667</iyy>
-          <iyz>0</iyz>
-          <izz>0.166667</izz>
-        </inertia>
-        <pose>0 0 0 0 -0 0</pose>
-      </inertial>
+    <link name='body'>
       <self_collide>0</self_collide>
       <enable_wind>0</enable_wind>
       <kinematic>1</kinematic>
       <pose>0 0 0 0 -0 0</pose>
       <gravity>1</gravity>
+      <inertial>
+        <mass>3</mass>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
       <visual name='visual'>
         <geometry>
-          <box>
-            <size>1 0.5 0.8</size>
-          </box>
+          <mesh>
+            <uri>model://table/meshes/table.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
         </geometry>
         <material>
-          <script>
-            <name>Gazebo/Grey</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
           <shader type='pixel'>
             <normal_map>__default__</normal_map>
           </shader>
-          <ambient>0.3 0.3 0.3 1</ambient>
-          <diffuse>0.7 0.7 0.7 1</diffuse>
-          <specular>0.01 0.01 0.01 1</specular>
+          <script>
+            <name>ModelPreview_92::link::visual_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0.871 0.867 0.855 1</ambient>
+          <diffuse>0.871 0.867 0.855 1</diffuse>
+          <specular>0 0 0 1</specular>
           <emissive>0 0 0 1</emissive>
         </material>
         <pose>0 0 0 0 -0 0</pose>
@@ -47,9 +48,10 @@
         <max_contacts>10</max_contacts>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
-          <box>
-            <size>1 0.5 0.8</size>
-          </box>
+          <mesh>
+            <uri>model://table/meshes/table.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
         </geometry>
         <surface>
           <friction>
