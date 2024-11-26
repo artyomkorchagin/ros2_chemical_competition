@@ -142,8 +142,6 @@
       <pose>0.51 0 1.2 0 0 1.570793</pose>
     </include>
 
-
-
     <gravity>0 0 -9.8</gravity>
     
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
