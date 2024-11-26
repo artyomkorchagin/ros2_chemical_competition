@@ -123,7 +123,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://concrete_mixer/meshes/async_motor_v1.stl</uri>
+            <uri>model://concrete_mixer/meshes/async_motor.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -150,7 +150,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://concrete_mixer/meshes/async_motor_v1.stl</uri>
+            <uri>model://concrete_mixer/meshes/async_motor.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>

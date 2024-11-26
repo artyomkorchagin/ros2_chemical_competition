@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <sdf version='1.7'>
   <model name='feeder_rubble'>
-    <link name='link_3'>
+    <link name='body'>
       <inertial>
         <mass>1</mass>
         <inertia>
@@ -101,7 +101,7 @@
         </surface>
       </collision>
     </link>
-    <link name='link_4'>
+    <link name='belt'>
       <inertial>
         <mass>1</mass>
         <inertia>
@@ -201,7 +201,7 @@
         </surface>
       </collision>
     </link>
-    <link name='link_6'>
+    <link name='roller_1'>
       <inertial>
         <mass>1</mass>
         <inertia>
@@ -301,7 +301,7 @@
         </surface>
       </collision>
     </link>
-    <link name='link_7'>
+    <link name='roller_2'>
       <inertial>
         <mass>1</mass>
         <inertia>

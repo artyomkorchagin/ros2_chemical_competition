@@ -1,26 +1,25 @@
 <?xml version='1.0'?>
 <sdf version='1.7'>
-  <model name='tip_holder'>
-    <link name='link_2'>
-      <inertial>
-        <mass>1</mass>
-        <inertia>
-          <ixx>0.166667</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.166667</iyy>
-          <iyz>0</iyz>
-          <izz>0.166667</izz>
-        </inertia>
-        <pose>0 0 0 0 -0 0</pose>
-      </inertial>
-      <pose>-1.38982 -0.5497 -2e-06 2.1e-05 6e-06 -0</pose>
+  <model name='sheet'>
+    <link name='body'>
       <self_collide>0</self_collide>
       <enable_wind>0</enable_wind>
       <kinematic>1</kinematic>
+      <pose>0 0 0 0 -0 0</pose>
       <gravity>1</gravity>
-      <visual name='visual'>
+      <inertial>
+        <mass>3</mass>
         <pose>0 0 0 0 -0 0</pose>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <visual name='visual'>
         <geometry>
           <mesh>
             <uri>model://tip_holder/meshes/tip_holder.stl</uri>
@@ -28,15 +27,19 @@
           </mesh>
         </geometry>
         <material>
-          <lighting>1</lighting>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
-          </script>
           <shader type='pixel'>
             <normal_map>__default__</normal_map>
           </shader>
+          <script>
+            <name>ModelPreview_92::link::visual_MATERIAL_</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0.871 0.867 0.855 1</ambient>
+          <diffuse>0.871 0.867 0.855 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
         </material>
+        <pose>0 0 0 0 -0 0</pose>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
       </visual>

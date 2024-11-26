@@ -31,8 +31,8 @@
             <normal_map>__default__</normal_map>
           </shader>
           <script>
-            <name>ModelPreview_89::link::visual_MATERIAL_</name>
-            <uri>__default__</uri>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
           </script>
           <ambient>0.871 0.867 0.855 1</ambient>
           <diffuse>0.871 0.867 0.855 1</diffuse>
