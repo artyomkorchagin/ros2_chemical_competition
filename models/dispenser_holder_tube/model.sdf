@@ -1,25 +1,26 @@
 <?xml version='1.0'?>
 <sdf version='1.7'>
   <model name='dispenser_holder'>
-    <link name='holder'>
-      <self_collide>0</self_collide>
-      <enable_wind>0</enable_wind>
-      <kinematic>0</kinematic>
-      <pose>0.04 -0.206 0.4 0 -0 1.5708</pose>
-      <gravity>1</gravity>
+    <link name='link_1'>
       <inertial>
-        <mass>3</mass>
-        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
         <inertia>
-          <ixx>1</ixx>
+          <ixx>0.166667</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>1</iyy>
+          <iyy>0.166667</iyy>
           <iyz>0</iyz>
-          <izz>1</izz>
+          <izz>0.166667</izz>
         </inertia>
+        <pose>0 0 0 0 -0 0</pose>
       </inertial>
+      <pose>-2.05802 -0.75236 0.638104 0 3e-06 -1.61448</pose>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+      <enable_wind>0</enable_wind>
       <visual name='visual'>
+        <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>model://dispenser_holder/meshes/dispenser_holder.stl</uri>
@@ -27,19 +28,19 @@
           </mesh>
         </geometry>
         <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
           <shader type='pixel'>
             <normal_map>__default__</normal_map>
           </shader>
-          <script>
-            <name>ModelPreview_92::link::visual_MATERIAL_</name>
-            <uri>__default__</uri>
-          </script>
-          <ambient>0.871 0.867 0.855 1</ambient>
-          <diffuse>0.871 0.867 0.855 1</diffuse>
-          <specular>0 0 0 1</specular>
           <emissive>0 0 0 1</emissive>
+          <ambient>0.3 0.3 0.3 1</ambient>
+          <diffuse>0.7 0.7 0.7 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
         </material>
-        <pose>0 0 0 0 -0 0</pose>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
       </visual>
@@ -100,7 +101,7 @@
         </surface>
       </collision>
     </link>
-    <link name='tripod'>
+    <link name='link_2'>
       <inertial>
         <mass>1</mass>
         <inertia>
@@ -111,13 +112,13 @@
           <iyz>0</iyz>
           <izz>0.166667</izz>
         </inertia>
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0.12 0.08 0 0 -0 0</pose>
       </inertial>
-      <pose>0 0 0 0 -0 3.14159</pose>
-      <self_collide>0</self_collide>
-      <enable_wind>0</enable_wind>
-      <kinematic>1</kinematic>
+      <pose>-2 -1 0.168643 0 -0 0</pose>
       <gravity>1</gravity>
+      <self_collide>0</self_collide>
+      <kinematic>1</kinematic>
+      <enable_wind>0</enable_wind>
       <visual name='visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -136,6 +137,9 @@
             <normal_map>__default__</normal_map>
           </shader>
           <emissive>0 0 0 1</emissive>
+          <ambient>0.3 0.3 0.3 1</ambient>
+          <diffuse>0.7 0.7 0.7 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -197,23 +201,23 @@
         </surface>
       </collision>
     </link>
-    <joint name='tripod_holder_z' type='revolute'>
-      <parent>tripod</parent>
-      <child>holder</child>
-      <pose>0.08 0.02 0.13 0 -0 0</pose>
+    <joint name='link_2_JOINT_0' type='prismatic'>
+      <parent>link_2</parent>
+      <child>link_1</child>
+      <pose>0.04 0.02 0.13 0 -0 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>-0.5</lower>
+          <upper>0</upper>
           <effort>-1</effort>
           <velocity>-1</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>5</damping>
-          <friction>5</friction>
+          <damping>0</damping>
+          <friction>10</friction>
         </dynamics>
       </axis>
       <physics>

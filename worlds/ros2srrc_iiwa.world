@@ -19,7 +19,7 @@
     <include>
       <uri>model://beaker</uri>
       <name>beaker_mixer</name>
-      <pose>0.82 0 1 0 -0 0</pose>
+      <pose>0.72 0 0.9 0 -0 0</pose>
     </include>
     
     <include>
@@ -38,7 +38,7 @@
     <include>
       <uri>model://table</uri>
       <name>table_middle</name>
-      <pose>1 0 0.8 0 0 0</pose>
+      <pose>1 0 0.7 0 0 0</pose>
 
     </include>
 
@@ -55,21 +55,21 @@
     </include>
 
     <include>
-      <uri>model://dispenser_holder</uri>
+      <uri>model://dispenser_holder_mixer</uri>
       <name>dispenser_holder_mixer</name>
-      <pose>1.09 0.507 0.789 0 0 0</pose>
+      <pose>0.882 0.385 0.689 0 0 -0.576567</pose>
     </include>
 
     <include>
-      <uri>model://dispenser_holder</uri>
+      <uri>model://dispenser_holder_tube</uri>
       <name>dispenser_holder_tube</name>
-      <pose>0.17 -1.19 0.789 0 0 -3.141593</pose>
+      <pose>0.17 -1.159 0.789 0 0 -3.141593</pose>
     </include>
 
     <include>
       <uri>model://dryer</uri>
       <name>dryer</name>
-      <pose>-0.068 0.95 0.8 0 0 3.141589</pose>
+      <pose>-0.068 0.8 0.8 0 0 3.141589</pose>
     </include>
 
     <include>
@@ -105,7 +105,7 @@
     <include>
       <uri>model://tip_holder</uri>
       <name>tip_holder</name>
-      <pose>0.09 -0.825 0.8 0 0 0</pose>
+      <pose>0.09 -0.75 0.8 0 0 0</pose>
     </include>
 
     <include>
@@ -117,25 +117,25 @@
     <include>
       <uri>model://tip_dispenser</uri>
       <name>tip_dispenser</name>
-      <pose>1.48 0 0 0 0 0</pose>
+      <pose>0.090 -0.75 1.2 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://tube_tripod</uri>
       <name>tube_tripod</name>
-      <pose>-0.2 -0.8 0.8 0 -0 0</pose>
+      <pose>-0.2 -0.75 0.8 0 -0 0</pose>
     </include>
 
     <include>
       <uri>model://tube_main</uri>
       <name>tube_main</name>
-      <pose>-0.2 -0.8 0.85 0 0 0</pose>
+      <pose>-0.2 -0.75 0.85 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://tube_cover</uri>
       <name>tube_cover</name>
-      <pose>-0.2 -0.8 0.95 0 0 0</pose>
+      <pose>-0.2 -0.75 0.95 0 0 0</pose>
     </include>
 
     <include>
@@ -147,15 +147,21 @@
     <include>
       <uri>model://water_dispenser</uri>
       <name>water_dispenser</name>
-      <pose>0.82 0 0.8 0 0 3.14159</pose>
+      <pose>0.72 0 0.7 0 0 3.14159</pose>
     </include>
 
     <include>
       <uri>model://water_mixer</uri>
       <name>water_mixer</name>
-      <pose>0.81 0 1.2 0 0 1.570793</pose>
+      <pose>0.71 0 1.1 0 0 1.570793</pose>
     </include>
-
+<!-- 
+    <include>
+      <uri>model://work_sphere</uri>
+      <name>work_sphere</name>
+      <pose>0 0 0.8 0 0 0</pose>
+    </include>
+-->
     <gravity>0 0 -9.8</gravity>
     
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>

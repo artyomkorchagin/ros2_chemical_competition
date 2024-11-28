@@ -3,7 +3,7 @@
     <model name='tip_dispenser'>
       <link name='pusher'>
         <inertial>
-          <mass>1</mass>
+          <mass>0.05</mass>
           <inertia>
             <ixx>0.166667</ixx>
             <ixy>0</ixy>
@@ -40,7 +40,7 @@
         </visual>
         <collision name='collision'>
           <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
+          <max_contacts>0</max_contacts>
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
@@ -97,7 +97,7 @@
       </link>
       <link name='body'>
         <inertial>
-          <mass>1</mass>
+          <mass>0.1</mass>
           <inertia>
             <ixx>0.166667</ixx>
             <ixy>0</ixy>
@@ -140,7 +140,7 @@
         </visual>
         <collision name='collision'>
           <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
+          <max_contacts>0</max_contacts>
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
@@ -197,7 +197,7 @@
       </link>
       <link name='button'>
         <inertial>
-          <mass>1</mass>
+          <mass>0.01</mass>
           <inertia>
             <ixx>0.166667</ixx>
             <ixy>0</ixy>
@@ -234,7 +234,7 @@
         </visual>
         <collision name='collision'>
           <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
+          <max_contacts>0</max_contacts>
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
@@ -291,7 +291,7 @@
       </link>
       <link name='tip'>
         <inertial>
-          <mass>1</mass>
+          <mass>0.01</mass>
           <inertia>
             <ixx>0.166667</ixx>
             <ixy>0</ixy>
@@ -334,7 +334,7 @@
         </visual>
         <collision name='collision'>
           <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
+          <max_contacts>0</max_contacts>
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
