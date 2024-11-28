@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.7'>
-  <model name='table'>
+  <model name='table_chem'>
     <link name='body'>
       <self_collide>0</self_collide>
       <enable_wind>0</enable_wind>
@@ -22,7 +22,7 @@
       <visual name='visual'>
         <geometry>
           <mesh>
-            <uri>model://table/meshes/table.stl</uri>
+            <uri>model://table_chem/meshes/table.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -49,7 +49,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://table/meshes/table.stl</uri>
+            <uri>model://table_chem/meshes/table.stl</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
