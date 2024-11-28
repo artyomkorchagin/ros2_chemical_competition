@@ -304,14 +304,14 @@
         <limit>
           <lower>-0</lower>
           <upper>0</upper>
-          <effort>60</effort>
+          <effort>0</effort>
           <velocity>-1</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>10</damping>
-          <friction>25</friction>
+          <damping>0</damping>
+          <friction>0</friction>
         </dynamics>
       </axis>
       <physics>
@@ -342,7 +342,7 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>5</damping>
+          <damping>1</damping>
           <friction>5</friction>
         </dynamics>
       </axis>
