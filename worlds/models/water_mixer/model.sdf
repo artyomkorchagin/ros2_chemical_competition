@@ -5,7 +5,7 @@
       <self_collide>0</self_collide>
       <enable_wind>0</enable_wind>
       <kinematic>0</kinematic>
-      <pose>0 0 -0.1 0 0 1.5708</pose>
+      <pose>-0.246 0.165 0.022 0 0 -3.141590</pose>
       <gravity>0</gravity>
       <inertial>
         <mass>1</mass>
@@ -113,7 +113,7 @@
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose>0 0 -0.05 0 -0 0</pose>
+      <pose>-0.246 0.165 0.072 0 0 0</pose>
       <gravity>0</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -398,7 +398,7 @@
     <joint name='mixer_nozzle' type='revolute'>
       <parent>mixer</parent>
       <child>nozzle</child>
-      <pose>0 -0.0015 0.42 0 -0 0</pose>
+      <pose>-0.0 0.0 0.022 0 -0 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
