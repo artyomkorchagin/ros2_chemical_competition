@@ -23,20 +23,20 @@
     </include>
     
     <include>
-      <uri>model://table</uri>
+      <uri>model://table_chem</uri>
       <name>table_left</name>
       <pose>0 1 0.8 0 0 1.57</pose>
 
     </include>
 
     <include>
-      <uri>model://table</uri>
+      <uri>model://table_chem</uri>
       <name>table_right</name>
       <pose>0 -1 0.8 0 0 1.57</pose>
 
     </include>
     <include>
-      <uri>model://table</uri>
+      <uri>model://table_chem</uri>
       <name>table_middle</name>
       <pose>1 0 0.7 0 0 0</pose>
 
