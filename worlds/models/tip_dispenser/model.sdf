@@ -453,7 +453,7 @@
           </ode>
         </physics>
       </joint>
-      <plugin name="detach_plugin" filename="detach_plugin.so"/>
+      <plugin name="detach_plugin" filename="libDetachPlugin.so"/>
       <joint name='body_tip' type='prismatic'>
         <parent>body</parent>
         <child>tip</child>
