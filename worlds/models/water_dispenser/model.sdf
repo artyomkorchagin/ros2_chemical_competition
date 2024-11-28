@@ -36,8 +36,8 @@
           <shader type='pixel'>
             <normal_map>__default__</normal_map>
           </shader>
-          <ambient>0.871 0.867 0.855 1</ambient>
-          <diffuse>0.871 0.867 0.855 1</diffuse>
+          <ambient>0.753 0.749 0.737 1</ambient>
+          <diffuse>0.753 0.749 0.737 1</diffuse>
           <specular>0.01 0.01 0.01 1</specular>
           <emissive>0 0 0 1</emissive>
         </material>

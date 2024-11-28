@@ -34,8 +34,8 @@
             <name>ModelPreview_92::link::visual_MATERIAL_</name>
             <uri>__default__</uri>
           </script>
-          <ambient>0.871 0.867 0.855 1</ambient>
-          <diffuse>0.871 0.867 0.855 1</diffuse>
+          <ambient>0.898 0.647 0.039 1</ambient>
+          <diffuse>0.898 0.647 0.039 1</diffuse>
           <specular>0 0 0 1</specular>
           <emissive>0 0 0 1</emissive>
         </material>

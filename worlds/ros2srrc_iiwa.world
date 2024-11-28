@@ -109,12 +109,6 @@
     </include>
 
     <include>
-      <uri>model://tip_tripod</uri>
-      <name>tip_tripod</name>
-      <pose>0.28 -0.77 0.810795 0 0 0</pose>
-    </include>
-
-    <include>
       <uri>model://tip_dispenser</uri>
       <name>tip_dispenser</name>
       <pose>0.090 -0.75 1.2 0 0 0</pose>
