@@ -153,7 +153,7 @@
     <include>
       <uri>model://water_mixer</uri>
       <name>water_mixer</name>
-      <pose>0.71 0 1.1 0 0 1.570793</pose>
+      <pose>0.71 0 0.789 0 0 1.570793</pose>
     </include>
 <!-- 
     <include>
