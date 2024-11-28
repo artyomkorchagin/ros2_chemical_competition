@@ -18,16 +18,19 @@ namespace gazebo
         return;
       }
 
-      // Найти joint body_tip
-      this->bodyTipJoint = _model->GetJoint("body_tip");
-      if (!this->bodyTipJoint)
+      // Найти link tip
+      this->tipLink = _model->GetLink("tip");
+      if (!this->tipLink)
       {
-        gzerr << "Joint 'body_tip' not found!" << std::endl;
+        gzerr << "Link 'tip' not found!" << std::endl;
         return;
       }
 
       // Сохранить пороговое значение силы
       this->forceThreshold = -10.0; // Отрицательная сила по Z
+
+      // Сброс флага гравитации при каждом запуске
+      this->gravityEnabled = false;
 
       // Подключить обработчик обновления
       this->updateConnection = event::Events::ConnectWorldUpdateBegin(
@@ -45,22 +48,23 @@ namespace gazebo
       {
         gzdbg << "Force in Z exceeded threshold: " << forceZ << "\n";
 
-        // Отключить joint body_tip
-        this->bodyTipJoint->Detach();
-
-        // Можно добавить дополнительную логику (например, отключить только один раз)
-        this->updateConnection.reset(); // Остановить проверку после отключения
+        // Включить гравитацию для tip (установить g_value)
+        if (!this->gravityEnabled) {
+          this->tipLink->SetGravityMode(true); // Включить гравитацию
+          this->gravityEnabled = true;
+          gzdbg << "Gravity enabled for tip." << std::endl;
+        }
       }
     }
 
   private:
     physics::LinkPtr pusherLink;            // Указатель на pusher
-    physics::JointPtr bodyTipJoint;         // Указатель на body_tip
+    physics::LinkPtr tipLink;               // Указатель на tip
     event::ConnectionPtr updateConnection; // Обработчик событий обновления
     double forceThreshold;                  // Порог силы
+    bool gravityEnabled = false;            // Флаг, показывающий, включена ли гравитация для tip
   };
 
   // Зарегистрировать плагин
   GZ_REGISTER_MODEL_PLUGIN(ForceMonitorPlugin)
 }
-
